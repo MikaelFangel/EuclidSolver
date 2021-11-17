@@ -1,12 +1,10 @@
-import javax.swing.*;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        GCD(341, 217);
-        GCD(465, 165);
-        GCD(2030,899);
-        GCD(188,158);
-
+        Scanner input = new Scanner(System.in);
+        System.out.println("Input the two values that you want the GCD of: ");
+        GCD(input.nextInt(), input.nextInt());
     }
 
     public static int GCD(int a, int b) {
